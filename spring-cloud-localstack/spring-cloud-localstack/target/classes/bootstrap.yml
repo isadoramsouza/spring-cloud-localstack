@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-cloud-localstack
+---
+
+spring:
+  config:
+    activate:
+      on-profile: localstack
+aws:
+  paramstore:
+    enabled: true
+    endpoint: http://localhost:4566
+
