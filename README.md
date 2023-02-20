@@ -16,14 +16,18 @@ docker-compose up
 ## AWS Services:
 
 - <b>Parameter Store</b>
-    - Add a new parameters:
+    - Add new parameters:
 
       ```
       aws --endpoint http://localhost:4566 --profile localstack ssm put-parameter --name "/config/spring-cloud-localstack_localstack/name" --value "Isadora" --type String
       
       aws --endpoint http://localhost:4566 --profile localstack ssm put-parameter --name "/config/spring-cloud-localstack_localstack/days" --value "Monday,Wednesday,Saturday" --type StringList
       ```
-
+### TODO
+- <b>Secrets Manager</b>
+- <b>S3</b>
+- <b>SQS</b>
+- <b>SNS</b>
 
 ### Run Spring Boot Application with localstack profile
   ```
