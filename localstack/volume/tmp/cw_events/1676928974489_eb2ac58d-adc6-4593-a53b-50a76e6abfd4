@@ -1,1 +1,0 @@
-{"Source": "aws.ssm", "Detail": "{\"name\": \"/config/spring-cloud-localstack_localstack/name\", \"operation\": \"Create\"}", "DetailType": "Parameter Store Change"}
