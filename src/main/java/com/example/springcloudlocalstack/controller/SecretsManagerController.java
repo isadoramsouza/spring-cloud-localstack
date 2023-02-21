@@ -1,7 +1,6 @@
 package com.example.springcloudlocalstack.controller;
 
-import com.example.springcloudlocalstack.parameterstore.configuration.ParameterStoreConfiguration;
-import com.example.springcloudlocalstack.secretsmanager.configuration.SecretsManagerConfiguration;
+import com.example.springcloudlocalstack.configuration.secretsmanager.SecretsManagerConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

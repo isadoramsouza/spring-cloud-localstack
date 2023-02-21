@@ -23,19 +23,19 @@ bash localstack.sh
 - <b>SQS</b>
 - <b>SNS</b>
 
-
-
 ### Running Spring Boot Application with localstack profile
+
 ```
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=localstack
 ```
+
 ### Testing Application
 
 ```
   curl --location --request GET 'http://localhost:8080/parameterstore/name'
 
   curl --location --request GET 'http://localhost:8080/parameterstore/days'
-  
+
   curl --location --request GET 'http://localhost:8080/secretsmanager/configuration'
 
 ```
