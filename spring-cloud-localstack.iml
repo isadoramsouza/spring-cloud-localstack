@@ -86,6 +86,12 @@
     <orderEntry type="library" name="Maven: io.awspring.cloud:spring-cloud-starter-aws-secrets-manager-config:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: io.awspring.cloud:spring-cloud-aws-secrets-manager-config:2.4.2" level="project" />
     <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-secretsmanager:1.12.266" level="project" />
+    <orderEntry type="library" name="Maven: io.awspring.cloud:spring-cloud-starter-aws-messaging:2.4.2" level="project" />
+    <orderEntry type="library" name="Maven: io.awspring.cloud:spring-cloud-aws-messaging:2.4.2" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sns:1.12.266" level="project" />
+    <orderEntry type="library" name="Maven: com.amazonaws:aws-java-sdk-sqs:1.12.266" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-messaging:5.3.25" level="project" />
+    <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.18.24" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-starter-test:2.7.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test:2.7.8" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.boot:spring-boot-test-autoconfigure:2.7.8" level="project" />
