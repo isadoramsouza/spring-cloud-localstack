@@ -2,46 +2,42 @@
 
 With [LocalStack](https://localstack.cloud) it's possible to run AWS applications or Lambdas entirely on local machine without connecting to a remote cloud provider.
 
-Installing localStack: https://github.com/localstack/localstack
+Installing LocalStack: https://github.com/localstack/localstack
 
-Initializing LocalStack in project:
+Initializing LocalStack in project with parameters, secrets, buckets and queues already created:
 
 ```
 cd ./localstack
 docker-compose up
+bash localstack.sh
 ```
 
 ## AWS Services:
 
 - <b>Parameter Store</b>
-
-  - Add new parameters:
-
-    ```
-    aws --endpoint http://localhost:4566 --profile localstack ssm put-parameter --name "/config/spring-cloud-localstack_localstack/name" --value "Isadora" --type String
-
-    aws --endpoint http://localhost:4566 --profile localstack ssm put-parameter --name "/config/spring-cloud-localstack_localstack/days" --value "Monday,Wednesday,Saturday" --type StringList
-    ```
+- <b>Secrets Manager</b>
 
 ### TODO
 
-- <b>Secrets Manager</b>
 - <b>S3</b>
 - <b>SQS</b>
 - <b>SNS</b>
 
-### Running Spring Boot Application with localstack profile
 
+
+### Running Spring Boot Application with localstack profile
 ```
 ./mvnw spring-boot:run -Dspring-boot.run.profiles=localstack
 ```
-
 ### Testing Application
 
 ```
   curl --location --request GET 'http://localhost:8080/parameterstore/name'
 
   curl --location --request GET 'http://localhost:8080/parameterstore/days'
+  
+  curl --location --request GET 'http://localhost:8080/secretsmanager/configuration'
+
 ```
 
 #### Reference
