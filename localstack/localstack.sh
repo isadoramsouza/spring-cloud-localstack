@@ -18,6 +18,6 @@ aws --endpoint http://localhost:4566 --profile localstack s3 mb s3://mybucket &
 echo ### SQS Queue
 aws --endpoint http://localhost:4566 --profile localstack sqs create-queue --queue-name sqsQueue &
 
-echo ### Criando Queue(Standard) no SNS do LocalStack...
+echo ### SNS Topic and Subscribe
 aws --endpoint http://localhost:4566 --profile localstack sns create-topic --name snsTopic &
 aws --endpoint http://localhost:4566 --profile localstack sns subscribe --topic-arn arn:aws:sns:us-east-1:000000000000:snsTopic --protocol sqs --notification-endpoint arn:aws:sqs:us-east-1:000000000000:sqsQueue
