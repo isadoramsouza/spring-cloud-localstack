@@ -4,6 +4,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 localstack/volume/
+logs/
+
 ### STS ###
 .apt_generated
 .classpath
